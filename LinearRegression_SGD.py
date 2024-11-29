@@ -10,7 +10,7 @@ class main():
         self.w = 0
         self.b = 0
         '''Load data'''
-        self.df = pd.read_csv('window_heat.csv') #reads in csv
+        self.df = pd.read_csv('../window_heat.csv') #reads in csv
         self.dt = self.df['dT[C]'].to_numpy() #converts to numpy arrays
         self.qdot = self.df['Qdot[W]'].to_numpy()
         self.train()
